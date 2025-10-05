@@ -1,5 +1,5 @@
 DAA Assignment 2 – Heap Sort
-Student Information
+👨‍🎓 Student Information
 
 Student B: Muslim
 Partner (Student A): Dinmukhamed
@@ -7,32 +7,30 @@ Course: Algorithms and Data Structures
 Pair Number: 2
 Algorithm Implemented: Heap Sort
 
-Project Overview
+📘 Project Overview
 
-This repository contains the implementation and analysis of the Heap Sort algorithm as part of Assignment 2 for the Algorithms and Data Structures course.
-The goals of the project were:
+This repository contains the implementation and analysis of the Heap Sort algorithm developed for Assignment 2 in the course Algorithms and Data Structures at Astana IT University.
 
-To implement the Heap Sort algorithm in Java.
+The main goals of this project were to:
 
-To analyze its time and space complexity theoretically and empirically.
+Implement Heap Sort in Java.
 
-To compare its performance with my partner’s Shell Sort algorithm.
+Analyze its theoretical and empirical performance.
 
-Heap Sort was implemented using three main Java classes:
+Compare it with the partner’s Shell Sort algorithm.
 
-HeapSort.java – contains the algorithm and heapify method.
+Heap Sort was implemented using three core Java classes:
 
-PerformanceTracker.java – tracks comparisons, array accesses, and moves.
+HeapSort.java → implements the sorting algorithm and heapify operations.
 
-BenchmarkRunner.java – provides the command-line interface for testing.
+PerformanceTracker.java → records comparisons, array accesses, and data movements.
 
-Repository Structure
+BenchmarkRunner.java → runs benchmarks and collects performance data.
 
-The repository includes source code, documentation, and performance plots.
+🗂️ Repository Structure
 
-src/ → contains Java source code (algorithms, metrics, cli).
-
-docs/ → contains reports and performance plots.
+src/ – Java source code (algorithms, metrics, cli).
+docs/ – reports and performance plots:
 
 heap-sort-report.pdf
 
@@ -40,55 +38,55 @@ analysis-report.pdf
 
 comparison-summary.pdf
 
-performance-plots (charts and table image)
+performance-plots (graphs and results table)
+pom.xml – Maven configuration file.
+README.md – project documentation.
 
-pom.xml → Maven configuration file
+⚙️ How to Run the Program
 
-README.md → project documentation
+To compile and execute Heap Sort manually:
 
-How to Run
+Open terminal in the project directory.
 
-To compile and run Heap Sort manually from the terminal:
+Run the following commands:
 
-javac -d out src/main/java/algorithms/.java src/main/java/metrics/.java src/main/java/cli/*.java
+javac -d out src/main/java/algorithms/*.java src/main/java/metrics/*.java src/main/java/cli/*.java
 java -cp out cli.BenchmarkRunner -n 10000 -dist random
+
 
 Parameters:
 
--n — input size (example: 100, 1000, 10000)
+-n → input size (examples: 100, 1000, 10000)
 
--dist — input distribution (random, sorted, reversed, nearly)
+-dist → data distribution type (random, sorted, reversed, nearly)
 
 Example:
 java -cp out cli.BenchmarkRunner -n 10000 -dist sorted
 
-Reports
+📄 Reports
 
-All reports are available in the docs/ folder:
+All reports are located in the docs/ folder:
 
-heap-sort-report.pdf — my implementation analysis.
+heap-sort-report.pdf – individual Heap Sort analysis.
 
-analysis-report.pdf — analysis of partner’s algorithm (Shell Sort).
+analysis-report.pdf – analysis of partner’s Shell Sort algorithm.
 
-comparison-summary.pdf — joint comparison between Heap Sort and Shell Sort.
+comparison-summary.pdf – joint comparison report of both algorithms.
 
-Performance Summary
+📊 Experimental Results
 
-The table below shows the experimental results for Heap Sort on different input types and sizes.
+The following table presents the measured performance of Heap Sort for different input types and sizes:
+
 
 ![Heap Sort Results](docs/performance-plots/results-table.png)
 
 
-Below is the image of the table as used in the report:
-
-Heap Sort Results Table:
+Here is the image version of the results table for better visualization:
 
 
-Graphical Results
+📈 Performance Plots
 
-Heap Sort performance plots are located in the docs/performance-plots/ folder.
-
-Time vs n (Random):
+Time vs n (Random data):
 
 
 Time vs Distribution (n = 10000):
@@ -97,17 +95,16 @@ Time vs Distribution (n = 10000):
 Comparisons vs n:
 
 
-Comparison with Shell Sort
+⚖️ Comparison with Shell Sort
 
-Heap Sort provides consistent O(n log n) performance and low memory usage.
+Heap Sort provides predictable O(n log n) performance and low memory usage.
 
-Shell Sort performs better on smaller or partially sorted datasets.
+Shell Sort is faster for small or nearly sorted datasets but less efficient for large data.
 
-For large datasets, Heap Sort is faster, more scalable, and stable.
+For large datasets, Heap Sort is more stable and scalable.
 
-Conclusion
+🧠 Conclusion
 
 This project successfully implemented and analyzed Heap Sort in Java.
-Heap Sort showed consistent O(n log n) performance for all input types and matched theoretical expectations.
-Compared to Shell Sort, Heap Sort is more reliable and efficient for large-scale datasets,
-while Shell Sort performs better for smaller or nearly sorted arrays.
+The results matched the theoretical time complexity of O(n log n) and showed consistent performance across all data types.
+Compared to Shell Sort, Heap Sort performs better on large datasets and provides more stable execution times.
